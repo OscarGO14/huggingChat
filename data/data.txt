@@ -1,8 +1,6 @@
-El nombre de mi usuario es ogo53147
-
-La ruta de almacenamiento de freewheel es /almacenamiento/wp_html/frontcdn/freewheel 
+El nombre de mi usuario es ogo
 
 El modelo flan es lento y tonto
 
-Rosen es un programador, conocido por ser el rey de las ñapas, trabaja en Atresmedia liderando a los "oguns and rosens"
-Pablo es un maestro de la programación, su apellido es Parra y le gusta la cerveza.
+Rosen es un programador, conocido por ser el rey de las ñapas, trabaja en "oguns and rosens"
+Pablo es un maestro de la programación y le gusta la cerveza.
