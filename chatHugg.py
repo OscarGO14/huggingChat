@@ -31,7 +31,7 @@ else:
   else:
     index = VectorstoreIndexCreator(embedding=HuggingFaceEmbeddings()).from_loaders([loader])
 
-llm = HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature": 0.5, "max_length": 1000})
+llm = HuggingFaceHub(repo_id="declare-lab/flan-alpaca-large", model_kwargs={"temperature": 0.1,"max_length": 64})
 
 chain = ConversationalRetrievalChain.from_llm(
   llm=llm,
@@ -46,7 +46,7 @@ while True:
   if query in ['quit', 'q', 'exit']:
     sys.exit()
   result = chain({"question": query, "chat_history": chat_history})
-  print(result['answer'])
+  print(result['answer'], len(result["answer"]))
 
   chat_history.append((query, result['answer']))
   query = None
